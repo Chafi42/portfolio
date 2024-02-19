@@ -408,6 +408,14 @@ section {
   background-color: #149ddd;
 }
 
+.skills {
+  margin-top: 2rem;
+}
+
+.example-1 {
+  list-style-type: none;
+}
+
 
 
 
@@ -728,27 +736,7 @@ body{
 # Contact
 --------------------------------------------------------------*/
 
-button {
-  margin: 20px;
-}
-.custom-btn {
-  width: 130px;
-  height: 40px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
+
 
 /* 1 */
 .btn-1 {
@@ -759,4 +747,90 @@ button {
 .btn-1:hover {
    background: rgb(0,3,255);
 background: linear-gradient(0deg, rgba(0,3,255,1) 0%, rgba(2,126,251,1) 100%);
+}
+
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+
+
+
+
+
+.button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  right: 0px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #17795E;
+  background-color: 
+#173B6C;
+  overflow: hidden;
+  padding-right: 40px;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 700;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: 
+#173B6C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.button:hover {
+  background: 
+#173B6C;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #173B6C;
+}
+
+.button:active {
+  border: 1px solid #173B6C;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .skills ul {
+    flex-direction: column;
+  }
 }
