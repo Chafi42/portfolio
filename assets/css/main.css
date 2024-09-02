@@ -352,6 +352,18 @@ h6 {
   background-color: rgba(33, 37, 41, 0.03);
 }
 
+/* Animation en bleu pour les liens de navigation */
+.navmenu a {
+  transition: color 0.3s ease;
+}
+
+.navmenu a:hover {
+  color: var(--accent-color); /* Change la couleur en bleu au survol */
+  border-bottom: #149ddd solid 1px; /* Ajoute une bordure bleue au survol */
+  border-radius: 5px; /* Arrondi les coins de la bordure */
+  width: 30%;
+}
+
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -513,6 +525,7 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #132944;
 }
 
 .section-title h2:after {
@@ -521,7 +534,7 @@ section,
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--accent-color);
+  background: #151f2b;
   left: 0;
   bottom: 0;
 }
