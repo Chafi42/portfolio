@@ -1277,3 +1277,75 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+/*--------------------------------------------------------------
+# Mode clair et sombre
+--------------------------------------------------------------*/
+/* /Default (Light Mode) */
+/* Default (Light Mode) */
+.header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff; /* Light background for header */
+  color: #000000; /* Dark text for light mode */
+}
+
+.header .profile-img img {
+  border: 3px solid #000000; /* Dark border for profile image */
+}
+
+.header .logo .sitename {
+  color: #000000; /* Dark text for site name */
+}
+
+.social-links a {
+  color: #000000; /* Dark icons for social links */
+}
+
+/* Dark Mode Styles */
+.dark-mode .header {
+  background-color: #121212; /* Dark background for header */
+  color: #ffffff; /* Light text for dark mode */
+}
+
+.dark-mode .header .profile-img img {
+  border: 3px solid #ffffff; /* White border for profile image */
+}
+
+.dark-mode .header .logo .sitename {
+  color: #ffffff; /* White text for site name */
+}
+
+.dark-mode .social-links a {
+  color: #ffffff; /* White icons for social links */
+}
+
+/* Additional styles for theme toggle button */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: currentColor;
+}
+
+#sun-icon {
+  display: block; /* Show sun icon in light mode */
+  color: #000000; /* Black color for sun icon in light mode */
+}
+
+.dark-mode #sun-icon {
+  display: none; /* Hide sun icon in dark mode */
+}
+
+#moon-icon {
+  display: none; /* Hide moon icon in light mode */
+  color: #ffffff; /* White color for moon icon in dark mode */
+}
+
+.dark-mode #moon-icon {
+  display: block; /* Show moon icon in dark mode */
+}
