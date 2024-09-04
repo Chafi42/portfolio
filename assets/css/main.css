@@ -145,14 +145,12 @@ h6 {
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
-  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .header .profile-img img {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .header .logo {
@@ -1309,10 +1307,6 @@ section,
 .dark-mode .header {
   background-color: #121212; /* Dark background for header */
   color: #ffffff; /* Light text for dark mode */
-}
-
-.dark-mode .header .profile-img img {
-  border: 3px solid #ffffff; /* White border for profile image */
 }
 
 .dark-mode .header .logo .sitename {
