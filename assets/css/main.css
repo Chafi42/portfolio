@@ -44,14 +44,6 @@
   --surface-color: #ffffff;
 }
 
-.dark-background {
-  --background-color: #040b14;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #151f2b;
-  --contrast-color: #ffffff;
-}
-
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -134,8 +126,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #065490;
   position: fixed;
   top: 0;
   left: 0;
@@ -291,7 +282,6 @@ h6 {
 
 .navmenu a .toggle-dropdown:hover,
 .navmenu a:focus .toggle-dropdown:hover {
-  background-color: var(--accent-color);
   color: var(--contrast-color);
 }
 
@@ -566,7 +556,6 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 70%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1289,10 +1278,6 @@ section,
   align-items: center;
   background-color: #ffffff; /* Light background for header */
   color: #000000; /* Dark text for light mode */
-}
-
-.header .profile-img img {
-  border: 3px solid #000000; /* Dark border for profile image */
 }
 
 .header .logo .sitename {
